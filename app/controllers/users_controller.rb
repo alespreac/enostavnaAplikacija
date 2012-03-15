@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 
     @user = User.new(params[:user])
     if @user.save
-      redirect_to @user, :flash => { :succes => "Welcom to the sempla app"}
+      redirect_to @user, :flash => { :success => "Welcom to the Semple app"}
     else
       
       @title = "Sign up"
